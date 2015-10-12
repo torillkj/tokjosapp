@@ -5,4 +5,5 @@ block content
   p Welcome to #{title}
   form(action='#{messageURL}',method='post')
     input(type='text',name='message',placeholder='Enter a message',size='40')
+    input(type='file',name='file',value='Attach a file')
     input(type='submit',name='submit',value='Submit')
