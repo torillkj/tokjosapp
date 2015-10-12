@@ -17,7 +17,7 @@ router.route('/message')
     var myFile = (req.body.file || 'empty file');
     MongoClient.connect(mongoURL, function(err, db) {
       console.log('Connected to database');
-      db.collection('messages').insert({'message': txtMessage},{'file': myFile}, {w: 1 }, function (err, item) {
+      db.collection('messages').insert({'message': txtMessage}, {w: 1 }, function (err, item) {
         if (err) {
           console.log('Error storing message in database: ' + err);
           db.close();
