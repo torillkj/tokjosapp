@@ -11,4 +11,4 @@ app.get('/', function(req, res){
 
 app.listen(port); //Lytter til rotnoden
 
-console.log('Server started at port 3000' + port);
+console.log('Server started at port 3000: ' + port);
