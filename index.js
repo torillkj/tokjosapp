@@ -6,7 +6,7 @@ var app = express();
 var port = (process.env.PORT || '3000');
 
 app.get('/', function(req, res){
-  res.send('Hello World!!');
+  res.send('Hello Torill! This app works fine!');
 })
 
 app.listen(port); //Lytter til rotnoden
